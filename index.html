@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en" style=""><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dietitian Suruchi | Transform Your Health Naturally</title>
+<!-- BEGIN: Tailwind Configuration -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-primary-container": "#d3ffc1",
+            "surface": "#fafaf5",
+            "on-secondary-fixed-variant": "#4b472b",
+            "on-secondary": "#ffffff",
+            "on-background": "#1a1c19",
+            "secondary-container": "#e8e0ba",
+            "primary-fixed-dim": "#a4d393",
+            "surface-container": "#eeeee9",
+            "secondary-fixed": "#eae3bc",
+            "inverse-primary": "#a4d393",
+            "tertiary-fixed-dim": "#e9c349",
+            "primary-container": "#4f7942",
+            "on-surface-variant": "#42493e",
+            "on-tertiary-fixed": "#241a00",
+            "on-tertiary-fixed-variant": "#574500",
+            "surface-tint": "#3f6833",
+            "on-primary": "#ffffff",
+            "primary": "#37602c",
+            "on-secondary-container": "#686344",
+            "error-container": "#ffdad6",
+            "tertiary-fixed": "#ffe088",
+            "secondary": "#635f40",
+            "primary-fixed": "#c0f0ad",
+            "surface-variant": "#e3e3de",
+            "surface-dim": "#dadad5",
+            "inverse-surface": "#2f312e",
+            "inverse-on-surface": "#f1f1ec",
+            "surface-bright": "#fafaf5",
+            "secondary-fixed-dim": "#cec7a2",
+            "surface-container-highest": "#e3e3de",
+            "on-tertiary-container": "#4f3e00",
+            "background": "#fafaf5",
+            "tertiary": "#735c00",
+            "surface-container-low": "#f4f4ef",
+            "on-error": "#ffffff",
+            "on-error-container": "#93000a",
+            "tertiary-container": "#cca730",
+            "error": "#ba1a1a",
+            "outline": "#73796d",
+            "surface-container-high": "#e8e8e3",
+            "on-tertiary": "#ffffff",
+            "on-secondary-fixed": "#1f1c04",
+            "on-surface": "#1a1c19",
+            "outline-variant": "#c2c9bb",
+            "surface-container-lowest": "#ffffff",
+            "on-primary-fixed-variant": "#28501e",
+            "on-primary-fixed": "#022100"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "unit": "8px",
+            "margin-desktop": "64px",
+            "gutter": "24px",
+            "margin-mobile": "20px",
+            "container-max": "1280px"
+          },
+          "fontFamily": {
+            "headline-lg-mobile": ["Playfair Display"],
+            "body-lg": ["Manrope"],
+            "headline-lg": ["Playfair Display"],
+            "label-sm": ["Manrope"],
+            "body-md": ["Manrope"],
+            "headline-md": ["Playfair Display"],
+            "headline-display": ["Playfair Display"]
+          },
+          "fontSize": {
+            "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "600"}],
+            "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+            "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+            "label-sm": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "600"}],
+            "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+            "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
+            "headline-display": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}]
+          }
+        },
+      },
+    }
+  </script>
+<!-- END: Tailwind Configuration -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&amp;family=Manrope:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style data-purpose="custom-animations">
+    .glass {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .floating {
+      animation: floating 3s ease-in-out infinite;
+    }
+    @keyframes floating {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-15px); }
+    }
+    .red-heart{
+  color: red;
+  font-size: 40px;
+
+  /* Makes icon filled */
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+}
+    .green{
+  color: #236F21;
+  font-size: 50px;
+  margin-left: -20px;
+
+  /* Makes icon filled */
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+    
+}
+/* .red-heart{
+  animation: glow2 .5s infinite alternate;
+}
+
+@keyframes glow2{
+  from{
+    text-shadow: 0 0 5px red;
+  }
+
+  to{
+    text-shadow:
+      0 0 30px rgb(207, 144, 144),
+      0 0 10px red,
+      0 0 10px red;
+  }
+} */
+.green{
+  animation: glow .5s infinite alternate;
+}
+
+@keyframes glow{
+  from{
+    text-shadow: 0 0 5px #577456;
+  }
+
+  to{
+    text-shadow:
+      0 0 5px #99be11,
+      0 0 10px #a8b659,
+      0 0 10px #4ade80;
+  }
+}
+
+    .blob-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      filter: blur(100px);
+      opacity: 0.3;
+      overflow: hidden;
+    }
+    .blob {
+      position: absolute;
+      border-radius: 50%;
+      animation: move-blob 25s infinite alternate ease-in-out;
+    }
+    @keyframes move-blob {
+      0% { transform: translate(0, 0) scale(1); }
+      33% { transform: translate(10vw, 20vh) scale(1.2); }
+      66% { transform: translate(-5vw, 40vh) scale(0.8); }
+      100% { transform: translate(5vw, -10vh) scale(1.1); }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px) scale(0.99);
+      transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+
+    .program-card {
+      transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    .program-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 15px 30px -15px rgba(55, 96, 44, 0.2);
+    }
+
+    .hero-entrance {
+      animation: hero-fade-up 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+      opacity: 0;
+    }
+    @keyframes hero-fade-up {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .nav-glass-active {
+      background: rgba(250, 250, 245, 0.95);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+
+    .section-heading {
+      font-family: 'Playfair Display', serif;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+    }
+
+    @keyframes jump {
+      0%, 20%, 50%, 80%, 100% {transform: translateY(0) scale(1);}
+      40% {transform: translateY(-15px) scale(1.03);}
+      60% {transform: translateY(-8px) scale(1.01);}
+    }
+    .animate-jump {
+      animation: jump 2s infinite;
+    }
+    .hover-jump:hover {
+      animation: jump 0.8s ease-in-out;
+    }
+
+    @keyframes marquee-infinite {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .animate-marquee-infinite {
+      display: flex;
+      width: max-content;
+      animation: marquee-infinite 50s linear infinite;
+    }
+    .smargin{
+      margin-top: -80px;
+      margin-bottom :20px ;
+    }
+    .smargin2{
+      
+      margin-top: -80px !important;
+  
+    }
+    .smargin3{
+      
+      margin-left: -50px !important;
+  
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+<!-- BEGIN: Background Elements -->
+<div class="blob-bg">
+<div class="blob w-[500px] h-[500px] bg-primary-fixed/20 -top-20 -left-20"></div>
+<div class="blob w-[400px] h-[400px] bg-secondary-fixed/20 top-1/2 left-2/3" style="animation-delay: -5s;"></div>
+<div class="blob w-[300px] h-[300px] bg-tertiary-fixed/20 bottom-0 left-1/4" style="animation-delay: -10s;"></div>
+</div>
+<!-- END: Background Elements -->
+<!-- BEGIN: Main Navigation -->
+<nav class="fixed top-0 w-full z-50 transition-all duration-500 nav-glass-active" id="main-nav">
+<div class="items-center w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto flex justify-between">
+<!-- Logo Container -->
+<div class="flex-1 flex justify-start">
+<a class="flex items-center" href="#">
+<img alt="Dietitian Suruchi Logo" class="w-auto object-contain h-24 md:h-32" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzk64l7u2UUR6hP7DB785-ZfamH26apekMFoDyygUQQMB9BwwjfrrX3YiXaSGRbF85Iuega1fvFbcb8VAjOuDLBltyJ6Lkc5ojdI74vMc0M5yU0BL09fhlYzAu6yRAbaD4vumlc_-hYkr0WYLY06EfGS3-tJBY-DWWm_yM2aZtTdcwAT1-qRRKHbwtbBDg-bsyRYGf-n9sjMBtOrqa38mcY6XmiuuRZiljGPO2annebrFs1Q4DKClNSzRy85ktJLnL-GxxUUarfDgV"/>
+</a>
+</div>
+<!-- Nav Links -->
+<div class="hidden md:flex items-center gap-8 justify-center flex-[2]">
+<a class="font-body-md text-[11px] uppercase tracking-widest text-primary border-b-2 border-primary pb-0.5 transition-all" href="#programs">Programs</a>
+<a class="font-body-md text-[11px] uppercase tracking-widest text-on-surface-variant hover:text-primary transition-all duration-300" href="#transformations">Transformations</a>
+<a class="font-body-md text-[11px] uppercase tracking-widest text-on-surface-variant hover:text-primary transition-all duration-300" href="#recipes">Recipes</a>
+<a class="font-body-md text-[11px] uppercase tracking-widest text-on-surface-variant hover:text-primary transition-all duration-300" href="#journal">Journal</a>
+<a class="font-body-md text-[11px] uppercase tracking-widest text-on-surface-variant hover:text-primary transition-all duration-300" href="#contact">Contact</a>
+</div>
+<!-- Action Button -->
+<div class="flex items-center justify-end flex-1">
+<button class="bg-primary text-on-primary px-6 lg:px-8 py-3 rounded-full font-label-sm uppercase tracking-widest hover:bg-primary/90 hover:scale-[1.01] transition-all duration-300 active:scale-95 cursor-pointer whitespace-nowrap text-[11px] lg:text-[12px]">
+          Book Consultation
+        </button>
+<button aria-label="Toggle Menu" class="flex md:hidden items-center justify-center p-2 ml-2 text-primary hover:bg-primary/5 rounded-full transition-all">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- END: Main Navigation -->
+<!-- BEGIN: Hero Section -->
+<section class="relative min-h-screen flex items-center justify-center pt-24 md:pt-32 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Wellness Background" class="w-full h-full object-cover brightness-95" src="https://lh3.googleusercontent.com/aida/ADBb0ujzOddPerMoYvOuWowPGqvwMl01K57nXPCNTHharR6-KONHCWFjYQUxJx7e6m-zBlKEVonaxqT9btFxu5uIasFvEFf6Ri6RIF6J9Vz6Qh2z8feASu31Pc1Dh9UyGR5idHYPQjBy2Oi7lQkj23Q1IHqJOeyQJ4BlR4qJB6-Y9KkwolLxoE7qxft7Yvz2GmQtU-nd1egnnQgHGUMQLXork9PvaZ9aAhjZ4NbFwVJgNJetqI8ximCQ2yGLo6Y"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background/70 via-background/40 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
+<div class="space-y-8 hero-entrance flex flex-col items-center md:items-start text-center md:text-left">
+<h1 class="font-headline-display text-4xl md:text-headline-display text-on-surface leading-tight">
+          Transform Your <br/><span class="text-primary italic">Health Naturally</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+          Personalized nutrition coaching for sustainable weight loss, hormonal balance, gut health, PCOS, diabetes management, and lifestyle transformation with Dietitian Suruchi.
+        </p>
+<div class="flex flex-col sm:flex-row gap-4 pt-4 w-full sm:w-auto">
+<button class="bg-primary text-on-primary px-10 py-4 rounded-full font-label-sm uppercase tracking-widest hover:shadow-lg hover:scale-[1.01] transition-all active:scale-95">
+            Book Consultation
+          </button>
+<button class="border border-primary text-primary px-10 py-4 rounded-full font-label-sm uppercase tracking-widest hover:bg-primary/5 transition-all active:scale-95">
+            View Transformations
+          </button>
+</div>
+</div>
+<!-- Decorative Elements -->
+<div class="relative hidden lg:block h-[600px] hero-entrance" style="animation-delay: 0.3s;">
+<div class="glass p-8 rounded-2xl absolute top-10 right-0 w-40 floating shadow-xl z-20">
+<div class="flex items-center gap-4 mb-1">
+<span class="material-symbols-outlined text-tertiary text-4xl">verified</span>
+<div>
+<p class="font-headline-md text-2xl text-primary font-bold">8+</p>
+<p class="font-label-sm text-[11px] text-on-surface-variant uppercase">Years Exp.</p>
+</div>
+</div>
+</div>
+<div class="glass p-8 rounded-2xl absolute top-48 left-20 w-40 floating shadow-xl z-20  " style="animation-delay: 1.25s;">
+<div class="flex items-center gap-4 mb-1">
+<span class="material-symbols-outlined green ">psychiatry</span>
+<div>
+<p class="font-headline-md text-2xl text-primary font-bold">15+</p>
+<p class="font-label-sm text-[11px] text-on-surface-variant uppercase">Diet Plans</p>
+</div>
+</div>
+</div>
+<div class="glass p-8 rounded-2xl absolute bottom-48 right-0 w-50 floating shadow-xl z-20" style="animation-delay: 1.5s;">
+<div class="flex items-center gap-4 mb-1">
+<!-- <span class="material-symbols-outlined text-red-500 text-4xl">favorite</span> -->
+ <span class="material-symbols-outlined red-heart">
+favorite
+</span>
+<div>
+<p class="font-headline-md text-2xl text-primary font-bold">50,000+</p>
+<p class="font-label-sm text-[11px] text-on-surface-variant uppercase">Happy Clients</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Hero Section -->
+<!-- BEGIN: Marquee Section -->
+<section class="bg-surface reveal active py-16">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center flex flex-col items-center">
+<p class="font-label-sm uppercase tracking-[0.25em] text-outline mb-10">Featured &amp; Certified By</p>
+<div class="marquee-container w-full overflow-hidden py-4">
+<div class="animate-marquee-infinite gap-16 md:gap-24 items-center">
+<div class="flex gap-16 md:gap-24 items-center whitespace-nowrap opacity-60 grayscale">
+<span class="font-headline-md italic tracking-[0.15em] text-3xl">VOGUE</span>
+<span class="font-headline-md italic tracking-[0.15em] text-3xl">Forbes</span>
+<span class="font-headline-md italic tracking-[0.15em] text-3xl">Harpers BAZAAR</span>
+<span class="font-headline-md italic tracking-[0.15em] text-3xl">ELLE</span>
+<span class="font-headline-md italic tracking-[0.15em] text-3xl">HealthLine</span>
+</div>
+<div class="flex gap-16 md:gap-24 items-center whitespace-nowrap opacity-60 grayscale">
+<span class="font-headline-md italic tracking-[0.15em] text-3xl">VOGUE</span>
+<span class="font-headline-md italic tracking-[0.15em] text-3xl">Forbes</span>
+<span class="font-headline-md italic tracking-[0.15em] text-3xl">Harpers BAZAAR</span>
+<span class="font-headline-md italic tracking-[0.15em] text-3xl">ELLE</span>
+<span class="font-headline-md italic tracking-[0.15em] text-3xl">HealthLine</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Marquee Section -->
+<!-- BEGIN: Programs Section -->
+<section class="py-24 bg-background relative overflow-hidden" id="programs">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="flex flex-col md:flex-row justify-between items-center md:items-end mb-16 gap-8 reveal text-center md:text-left active">
+<div class="max-w-2xl">
+<span class="font-label-sm text-primary uppercase tracking-widest mb-3 block">Our Specializations</span>
+<h2 class="section-heading text-headline-lg md:text-5xl text-on-surface">Curated Holistic Programs</h2>
+</div>
+<p class="font-body-md text-on-surface-variant max-w-sm">
+          Science-backed protocols designed to restore your body's natural rhythm through precision nutrition.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Program Card 1: Weight Loss -->
+<div class="program-card glass rounded-[32px] overflow-hidden group cursor-pointer border-transparent hover:border-primary/10 reveal flex flex-col active">
+<div class="aspect-[4/3] overflow-hidden">
+<img alt="Weight Loss" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/ADBb0ugDcDD2ULlQViIwKVKyTD0AVmyrT4jnIn-sqjNyIlDl65pE5_ZmVRXWMAb_DyAn200C5yDCc34Gtdpa-Wn5FtgBN3tgmvJ40sSABidHJ8OnjA7XxtXAAYdIDF9jiWpFOnN8hmz8ihW0YIdE58X-Vn2sSxwpbM1q4QwGtQsMoxOvUegnTmXaA651EPNXLEnqNcCGtE7wNGMsPa4zTsbJcIERjEMhrKgrFm-gIqnTgKJKu-rKManMpWPnpls"/>
+</div>
+<div class="p-10 flex flex-col flex-grow items-center md:items-start text-center md:text-left">
+<h3 class="font-headline-md text-2xl text-on-surface mb-3">Weight Loss</h3>
+<p class="font-body-md text-on-surface-variant mb-6">Metabolic restoration focused on sustainable fat loss without restrictive deprivation.</p>
+<a class="inline-flex items-center text-primary font-label-sm uppercase tracking-widest group-hover:translate-x-2 transition-all mt-auto" href="#">
+              Learn More <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Program Card 2: PCOS -->
+<div class="program-card glass rounded-[32px] overflow-hidden group cursor-pointer border-transparent hover:border-primary/10 reveal flex flex-col active">
+<div class="aspect-[4/3] overflow-hidden">
+<img alt="PCOS Management" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/ADBb0uhDBb0Bf6HROHriM8Uv3ev8BwBNusVfeAx-OSJOUmQkLz7PY1NtRvHtlThqz1Yr0UzVMezk2-UPyAhBsYbzTqGGYQ4SzHcC2zbapM6ZEDXmhsfDzel0lRa_8TEflrDAsdPb8ojZWR1xMwVaBiFU2OED12jii-YsvNTMKRb9VZHd1Qg7-_aPr6MxLbSz6qxPgrz26Fgvp6eM5Gr3LFei4zYTnZBKAx17t2OLj44DPWdmOEobwDOonQVdGxUp"/>
+</div>
+<div class="p-10 flex flex-col flex-grow items-center md:items-start text-center md:text-left">
+<h3 class="font-headline-md text-2xl text-on-surface mb-3">PCOS Management</h3>
+<p class="font-body-md text-on-surface-variant mb-6">Hormonal balancing through specific nutritional interventions and cycle-syncing.</p>
+<a class="inline-flex items-center text-primary font-label-sm uppercase tracking-widest group-hover:translate-x-2 transition-all mt-auto" href="#">
+              Learn More <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Program Card 3: Diabetes -->
+<div class="program-card glass rounded-[32px] overflow-hidden group cursor-pointer border-transparent hover:border-primary/10 reveal flex flex-col active">
+<div class="aspect-[4/3] overflow-hidden">
+<img alt="Diabetes Reversal" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/ADBb0ui9m6QoWEWxZyOoKiLS3HIUjesFxTqpv3u9RIfwAVdrGDn0o1rDrPNCctiVSEThN_6ebH0YJrS4b4uOHZJ8nFHELkUbwnf5UYXaKCtDa1Idac8-e6pFttkgk9UpwP2LLQe_AbFxbWe57Kw_YzYYW1JYvHRc6ZundRZ6TagIQP-0tiamxoA09kK6AhispjGOVrwI8wd75XC2V3Erlb3wNym4BzH2iQ46MNmhpBNbvcYE-QS0ocBDAwaQbHEl"/>
+</div>
+<div class="p-10 flex flex-col flex-grow items-center md:items-start text-center md:text-left">
+<h3 class="font-headline-md text-2xl text-on-surface mb-3">Diabetes Reversal</h3>
+<p class="font-body-md text-on-surface-variant mb-6">Clinical-grade nutrition plans designed to optimize insulin sensitivity and blood sugar levels.</p>
+<a class="inline-flex items-center text-primary font-label-sm uppercase tracking-widest group-hover:translate-x-2 transition-all mt-auto" href="#">
+              Learn More <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Program Card 4: Thyroid Care -->
+<div class="program-card glass rounded-[32px] overflow-hidden group cursor-pointer border-transparent hover:border-primary/10 reveal flex flex-col active">
+<div class="aspect-[4/3] overflow-hidden">
+<img alt="Thyroid Care" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/ADBb0uh0AaNWwc6VdnFIeqGL41iUPo6ANWSXTMhD3UiYlk0UclytVKYXjPOLvU6H-L0dGfTV36k-c-sP-KSSVoKuxpqIDt3AWbs-V3pxrCVK_hEABJX4qwH1tnAA9XO5_Aat6VzoJn9bTXs4k0cDTHZSjmgRPF6CD4oVbg-4aEeAlVz4J4Bhk14dUCR74VT4wR_DR5d6yu0VgrNIJLcIZTSDv_IuYT4VgRJHSO4tz4uIw-Q_W8pxlo_4E6EMIZc2"/>
+</div>
+<div class="p-10 flex flex-col flex-grow items-center md:items-start text-center md:text-left">
+<h3 class="font-headline-md text-2xl text-on-surface mb-3">Thyroid Care</h3>
+<p class="font-body-md text-on-surface-variant mb-6">Supporting endocrine health and metabolic function through targeted micronutrient optimization.</p>
+<a class="inline-flex items-center text-primary font-label-sm uppercase tracking-widest group-hover:translate-x-2 transition-all mt-auto" href="#">
+              Learn More <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Program Card 5: Gut Health -->
+<div class="program-card glass rounded-[32px] overflow-hidden group cursor-pointer border-transparent hover:border-primary/10 reveal flex flex-col active">
+<div class="aspect-[4/3] overflow-hidden">
+<img alt="Gut Health" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/ADBb0ujXdP5cP3-dybzZncxmXFm-_fOleNkxK-i-yL7Dwh-9vtsBVEer5qqf9TOfY9k3rkFdMIpjvtcVZDD0D5VXvqnwK6bbiCYtvNQQZI3TEpG2MBLMAC4-2YE7VUFfbfc92UnBhdormlQ_xPi8vRzVH-3ZMcfpP_FCpRA3AwSQXmL7_KhNvc6sveFpbICwWlnJqSU5IQuWYQAhqNDaI5Xtso-gjdHmk_bUaezq_YTo7SyTC4KClDItWAeS5Ptv"/>
+</div>
+<div class="p-10 flex flex-col flex-grow items-center md:items-start text-center md:text-left">
+<h3 class="font-headline-md text-2xl text-on-surface mb-3">Gut Health</h3>
+<p class="font-body-md text-on-surface-variant mb-6">Microbiome repair and digestive optimization for enhanced nutrient absorption and immunity.</p>
+<a class="inline-flex items-center text-primary font-label-sm uppercase tracking-widest group-hover:translate-x-2 transition-all mt-auto" href="#">
+              Learn More <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Program Card 6: Pregnancy Nutrition -->
+<div class="program-card glass rounded-[32px] overflow-hidden group cursor-pointer border-transparent hover:border-primary/10 reveal flex flex-col active">
+<div class="aspect-[4/3] overflow-hidden">
+<img alt="Pregnancy Nutrition" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/ADBb0uj9JVxQjlv8d11ehYcWu_7qtv7Targ47M0Ous3jpVz61ANH22PJ_ezs9TtEYBEK7KyzOQWdJsdG-U4ZAvyVntkZircddD1g-4mMiispoe_xKywqwamcU-oN9e5N1FhgO1br1UZ-7MIDbS8vKyu3zxkNwbSju97x_qeUSKwA-BmNcy-Y7D7aFn-P_5LJzboODVnTeGZVIWdYU2Gm_YXPDbDZuF_btV3FE0pzLd7srNmqkBb3EZeixlw48xRi"/>
+</div>
+<div class="p-10 flex flex-col flex-grow items-center md:items-start text-center md:text-left">
+<h3 class="font-headline-md text-2xl text-on-surface mb-3">Pregnancy Nutrition</h3>
+<p class="font-body-md text-on-surface-variant mb-6">Comprehensive nutritional support for prenatal health, fetal development, and postpartum recovery.</p>
+<a class="inline-flex items-center text-primary font-label-sm uppercase tracking-widest group-hover:translate-x-2 transition-all mt-auto" href="#">
+              Learn More <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
+</a>
+</div>
+</div></div>
+</div>
+</section>
+<!-- END: Programs Section -->
+<!-- BEGIN: Transformations Section -->
+<section class="bg-surface-container-low py-20 lg:py-24" id="transformations">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-12 lg:mb-16 reveal active">
+<span class="font-label-sm text-secondary uppercase tracking-[0.2em] mb-3 block">Proven Results</span>
+<h2 class="section-heading text-headline-md md:text-4xl text-on-surface">Living Proof of Transformation</h2>
+</div>
+<div class="grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
+<!-- Transformation 1 -->
+<div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-500 reveal active">
+<div class="w-full aspect-[4/3] overflow-hidden relative">
+<img alt="Transformation Success 1" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0uiYjT1op_I_mq81smXdvIH5_hPS_Si9jbdR-jcqcyrohfYHuGKGn8aydVpqkKM6jFANufWrUqqvq4f4YsZtiYQETcgAi0GLhvXMIKXtyyNnCVdQcIm0wq3Y_MeavqiknMrFnDOoVHFvbNhdmNib3R9lr2NdPwrcfWShY59UOHf3ntvm3KN8Q_tC-y5YQI-06V3848rbZSNJajyxt_8sAUyuZP9zAKUwjdj9MLC4GUrJVwNGWsIJLo7BGh0"/>
+</div>
+<div class="p-5 md:p-8 flex flex-col text-center">
+<h4 class="font-headline-md text-base md:text-xl text-on-surface mb-1">Ananya's Journey</h4>
+<p class="font-label-sm text-primary uppercase tracking-widest text-[9px] md:text-[10px] mb-4">LOST 18KG • 6 MONTHS</p>
+<p class="font-body-md text-xs md:text-sm text-on-surface-variant italic leading-relaxed line-clamp-3">
+              "The approach wasn't just about weight; it was about how I felt. My hormones finally stabilized."
+            </p>
+</div>
+</div>
+<!-- Transformation 2 -->
+<div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-500 reveal active">
+<div class="w-full aspect-[4/3] overflow-hidden relative">
+<img alt="Transformation Success 2" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0ujPMnRBqPeqTHjdWrs57HpuWUcyz5Fnz5HBXMWtk-l60H-DJNpBUVUgETzCnlgp8wwHHHscnMaTEtW3l7Ls7i-pJbRCu0TWzExeRoh_mq_AJa0XkVMles2NFa7vCqSoGxUtCcbrKHE6XrIfsJjpad0DmyC-HFVfxQcRzGEij1NFb2p0OsWvmIx1OSvkLlGs0IUc0aj_4RbnSMQvruhTcUdyitDP7P8DXQ32XYgWD1O-6mGcSXuNpYjxNbL5"/>
+</div>
+<div class="p-5 md:p-8 flex flex-col text-center">
+<h4 class="font-headline-md text-base md:text-xl text-on-surface mb-1">Arjun's Recovery</h4>
+<p class="font-label-sm text-primary uppercase tracking-widest text-[9px] md:text-[10px] mb-4">HbA1c 7.2 TO 5.4</p>
+<p class="font-body-md text-xs md:text-sm text-on-surface-variant italic leading-relaxed line-clamp-3">
+              "I avoided insulin therapy. The strategy was easy to follow even with my busy schedule."
+            </p>
+</div>
+</div>
+<!-- Transformation 3 -->
+<div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-500 reveal active">
+<div class="w-full aspect-[4/3] overflow-hidden relative">
+<img alt="Transformation Success 3" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0ujhDDUIuwRpfnD2Bld2IZVMCH7WlbWKotaCMREwyjr8Zto2MbeCGEFTOS_Vv2jWPBTxSdTAi58VIcRSvUfxtqBlaO6-h9L8YoQJ8jzlKvBtSotgMaCV0InR1e4n7qign9mE6MAJbhL3FclUbI-NjbH0QPWl99kRMbRf6c19H0RkDUikwpZ-YK01z_MIAV_M27M0fOGHkZ_1ED380oYa_cI6fc0g-EqTLqf4ypi-NWIFg4uFgmaawpQO7l3x"/>
+</div>
+<div class="p-5 md:p-8 flex flex-col text-center">
+<h4 class="font-headline-md text-base md:text-xl text-on-surface mb-1">Vikram's Vitality</h4>
+<p class="font-label-sm text-primary uppercase tracking-widest text-[9px] md:text-[10px] mb-4">LOST 12KG • 4 MONTHS</p>
+<p class="font-body-md text-xs md:text-sm text-on-surface-variant italic leading-relaxed line-clamp-3">
+              "I regained my energy and clarity. The plan fit perfectly into my executive lifestyle."
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- BEGIN: About Founder Section (Refined) -->
+<section class="py-20 bg-background overflow-hidden" id="about-founder">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+<!-- Left Column: Portrait & Quote -->
+<div class="relative reveal active">
+<div class="relative rounded-[32px] overflow-hidden floating max-w-xs mx-auto lg:mx-0">
+<img alt="Elena Vance - Founder" class="w-full h-auto object-cover grayscale-[10%] hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida/ADBb0ujsmdKNU8G4yAk0fs3cQqOWO1C4kLaV1PsyozdSbRLWytZSn8pYURZ4V_0GDgh5HvMxcQ_I6lUjzThGE45AjE6ihZ_pmH4mXKbqlv8IeBWnSo7GQoVsDRUM2mBmhZlbURrVWpTrF8hZhMP_63q9F9XoJyGOTKVheWDZd0WP2zONeQX3wnGRMEJCreG8ZVmcnwMVlFSf6P-79Wc8pAAM6aV1fPSH9cgsyEmvTkp7NBI2h0aXtbekTg6xJY3k"/>
+<!-- Quote Overlay -->
+<div class="glass absolute bottom-3 left-3 right-3 p-3 rounded-lg shadow-md z-20">
+<p class="font-body-md italic text-on-surface text-[12px] leading-snug mb-1">‘Nature provides the blueprint; we simply help you follow it.’</p>
+<p class="font-label-sm text-primary uppercase tracking-widest text-[8px]">— Elena Vance</p>
+</div>
+</div>
+<!-- Decorative Background Blob -->
+<div class="absolute -z-10 -top-4 -left-4 w-32 h-32 bg-primary-fixed/20 blur-2xl rounded-full"></div>
+</div>
+<!-- Right Column: Content -->
+<div class="space-y-6 reveal active" style="transition-delay: 0.2s;">
+<div class="space-y-1">
+<span class="font-label-sm text-primary uppercase tracking-[0.25em] block ml-0.5">About the Founder</span>
+<h2 class="section-heading text-4xl text-on-surface leading-tight">Precision Science. <br/><span class="italic">Rooted in Nature.</span></h2>
+</div>
+<p class="font-body-md text-on-surface-variant">
+          With over 15 years in clinical nutrition and functional medicine, Elena Vance has pioneered a holistic approach that bridges the gap between modern diagnostics and traditional healing.
+        </p>
+<!-- Certification Grid -->
+<div class="grid grid-cols-2 gap-4 py-1">
+<div class="border-l-2 border-primary-fixed-dim pl-4">
+<p class="font-headline-md text-lg text-on-surface font-bold">MS, RDN</p>
+<p class="font-label-sm text-outline uppercase tracking-tighter text-[9px]">Education</p>
+</div>
+<div class="border-l-2 border-primary-fixed-dim pl-4">
+<p class="font-headline-md text-lg text-on-surface font-bold">IFMCP</p>
+<p class="font-label-sm text-outline uppercase tracking-tighter text-[9px]">Certification</p>
+</div>
+</div>
+<p class="font-body-md text-sm text-on-surface-variant">
+          Our philosophy is built on the belief that health isn't a destination but a continuous state of balance. We focus on bio-individuality—recognizing that your needs are unique.
+        </p>
+<div class="pt-1">
+<button class="border border-primary text-primary px-8 py-3 rounded-full font-label-sm uppercase tracking-widest hover:bg-primary/5 transition-all active:scale-95">
+            Read Full Story
+          </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: About Founder Section -->
+<!-- BEGIN: Contact & Consultation Form -->
+<section class="bg-surface relative overflow-hidden flex items-center justify-center min-h-[700px] py-16 md:py-20" id="contact">
+<div class="absolute inset-0 z-0">
+<img alt="Luxury Wellness Setting" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyyUA2ddh-IFbOQ9DJtTJqcaRBq0SgNMZgoGsKhN677txrYsYL39CyBozrlXZ0S4EqPLNEbnQqPi4QtecEg5EwndXFp8C7c0EPrabEDadYqcCKhzJEdYI0755leqQCi7amNqy74vFgv8Y5uMwM6ctKp741wbNmRYVo8AZ9Px7HlK0VqgifDs-8Oic3pdHBuRJNgvrajvfeAk2YJ9O3oFgHfI4UdSiQHkimuWTzglKT6J7v5s5sHrNGDzxWWipgPeNKgyISLrHs70iT"/>
+<div class="absolute inset-0 bg-white/40 backdrop-blur-[2px]"></div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10 w-full">
+<div class="text-center reveal active mb-10">
+<span class="font-label-sm text-primary uppercase tracking-[0.3em] mb-4 block">Begin Your Journey</span>
+<h2 class="section-heading text-on-surface text-headline-lg md:text-4xl mb-4">Schedule Your Consultation</h2>
+<p class="font-body-lg max-w-2xl mx-auto text-body-md">Take the first step towards a revitalized version of yourself with Dietitian Suruchi's expert guidance.</p>
+</div>
+<div class="flex justify-center">
+<div class="w-full max-w-2xl">
+<form class="bg-surface-container-lowest/80 backdrop-blur-xl rounded-[48px] w-full border border-white shadow-2xl reveal active p-6 md:p-10 space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-2">
+<label class="font-label-sm text-[10px] text-outline uppercase tracking-widest block ml-1">Full Name</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-2 top-1/2 -translate-y-1/2 text-outline/50 text-xl">person</span>
+<input class="w-full bg-transparent focus:ring-0 focus:border-primary transition-all duration-300 py-3 pl-8 text-body-md placeholder:text-outline-variant/60 text-on-surface border-b border-outline-variant/40 rounded-none" placeholder="Your Name" type="text"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-sm text-[10px] text-outline uppercase tracking-widest block ml-1">Email Address</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-2 top-1/2 -translate-y-1/2 text-outline/50 text-xl">mail</span>
+<input class="w-full bg-transparent focus:ring-0 focus:border-primary transition-all duration-300 py-3 pl-8 text-body-md placeholder:text-outline-variant/60 text-on-surface border-b border-outline-variant/40 rounded-none" placeholder="email@example.com" type="email"/>
+</div>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-sm text-[10px] text-outline uppercase tracking-widest block ml-1">Health Goal</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-2 top-1/2 -translate-y-1/2 text-outline/50 text-xl">clinical_notes</span>
+<select class="w-full bg-transparent focus:ring-0 focus:border-primary transition-all duration-300 py-3 pl-8 text-body-md text-on-surface-variant cursor-pointer border-b border-outline-variant/40 rounded-none appearance-none">
+<option>Sustainable Weight Management</option>
+<option>Hormonal &amp; PCOS Support</option>
+<option>Gut &amp; Digestive Health</option>
+<option>Diabetes Management</option>
+</select>
+</div>
+</div>
+<div class="pt-6 flex justify-center">
+<button class="w-full md:w-auto min-w-[300px] bg-primary text-on-primary py-5 px-12 rounded-full font-label-sm uppercase tracking-[0.25em] hover:bg-primary-container hover:shadow-2xl hover:scale-[1.03] transition-all shadow-xl active:scale-95 text-[12px]">
+                Request Appointment
+              </button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Contact & Consultation Form -->
+<!-- BEGIN: Footer -->
+<footer class="bg-surface-container-low py-20 relative overflow-hidden">
+<div class="relative z-10 grid grid-cols-1 gap-12 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center md:text-left md:grid-cols-5">
+<div class="col-span-1 flex flex-col items-center  md:items-start md:col-span-2 gap-0">
+<a class="flex items-center  m-0 p-0" href="#">
+<img alt="Dietitian Suruchi Logo" class="w-auto object-contain smargin2 h-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAj7tvoneP4co3UgLyVNHmB9gNnsVABNJ5GctN173kpwH0-TkA2oEI_YbeGEz5hbNbmOxLPir-NEhTApf5K8L6hj3iTaFA6d79mze4DmlEqIQwt76W2wcBehqMXxV0FD6v9ukFgHezCaGy9MIxMXFlzbioZV9mkXGY6k68oLjUXfujaM6-oKNekHX8xT086W1E36bhpwYffY1mB_EX4VeoZ4x2xuz1BEMQzBVWI9sXxce3SzFJYyIOnuYBG-qIzTnPSe6JM2pzIApT7" style="margin: 0px; padding: 0px;"/>
+</a>
+<p class="font-body-md text-base text-on-surface-variant max-w-sm leading-relaxed smargin">
+          Premium holistic nutrition coaching by Dietitian Suruchi. Science-based protocols, organic philosophy, and clinical precision for a healthier you.
+        </p>
+<div class="flex gap-9 justify-center w-full smargin3">
+  
+<a class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#"><span class="material-symbols-outlined text-xl">share</span></a>
+<a class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#"><span class="material-symbols-outlined text-xl">public</span></a>
+<a class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#"><span class="material-symbols-outlined text-xl">mail</span></a>
+</div>
+</div>
+<div class="space-y-6 mt-12 md:mt-0">
+<p class="font-label-sm text-[15px] text-secondary uppercase tracking-widest font-bold">Services</p>
+<ul class="space-y-3.5 font-body-md text-base text-on-surface-variant">
+<li class=""><a class="hover:text-secondary transition-colors" href="#">Personal Coaching</a></li>
+<li class=""><a class="hover:text-secondary transition-colors" href="#">Metabolic Testing</a></li>
+<li class=""><a class="hover:text-secondary transition-colors" href="#">Meal Planning</a></li>
+<li class=""><a class="hover:text-secondary transition-colors" href="#">Postpartum Care</a></li>
+</ul>
+</div>
+<div class="space-y-6 mt-12 md:mt-0">
+<p class="font-label-sm text-[15px] text-secondary uppercase tracking-widest font-bold">Company</p>
+<ul class="space-y-3.5 font-body-md text-base text-on-surface-variant">
+<li class=""><a class="hover:text-secondary transition-colors" href="#">About Suruchi</a></li>
+<li class=""><a class="hover:text-secondary transition-colors" href="#">Privacy Policy</a></li>
+<li class=""><a class="hover:text-secondary transition-colors" href="#">Terms of Service</a></li>
+<li class=""><a class="hover:text-secondary transition-colors" href="#">Careers</a></li>
+</ul>
+</div>
+<div class="space-y-6 mt-12 md:mt-0">
+<p class="font-label-sm text-[15px] text-secondary uppercase tracking-widest font-bold">Connect</p>
+<ul class="space-y-3.5 font-body-md text-base text-on-surface-variant">
+<li class="flex flex-col">
+<span class="font-bold text-[10px] uppercase tracking-tighter text-outline">Clinic</span>
+<span class="">123 Health Ave, New Delhi, India</span>
+</li>
+<li class="flex flex-col">
+<span class="font-bold text-[10px] uppercase tracking-tighter text-outline">Email</span>
+<a class="hover:text-secondary transition-colors" href="mailto:info@dietitiansuruchi.com">info@dietitiansuruchi.com</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-20 pt-8 border-t border-outline-variant/30 text-center">
+<p class="font-label-sm text-[11px] text-outline tracking-widest uppercase">© 2026 DIETITIAN SURUCHI. ALL RIGHTS RESERVED.</p>
+</div>
+</footer>
+<!-- END: Footer -->
+<!-- WhatsApp Float -->
+<a class="fixed bottom-8 right-6 md:right-8 z-[60] bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 active:scale-95 transition-all flex items-center justify-center animate-jump" href="https://wa.me/#" id="whatsapp-btn">
+<svg fill="currentColor" height="28" viewbox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path>
+</svg>
+</a>
+<!-- BEGIN: Interactivity Script -->
+<script data-purpose="scroll-animations">
+    document.addEventListener('DOMContentLoaded', () => {
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+      const nav = document.getElementById('main-nav');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 30) {
+          nav.classList.add('shadow-md');
+        } else {
+          nav.classList.remove('shadow-md');
+        }
+      });
+    });
+  </script>
+<!-- END: Interactivity Script -->
+</body></html>
